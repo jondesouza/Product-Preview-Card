@@ -108,7 +108,7 @@ a {
     font-weight: lighter;
 }
 
-@media screen and (max-width: 625px) {
+@media (max-width: 625px) {
     .box-product {
         flex-direction: column;
         margin: 20px 10px;
