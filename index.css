@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2ebe3;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.box-product {
+    width: 600px;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.img-product {
+    height: 100%;
+    width: 50%;
+    background: url(https://i.imgur.com/9v7GZCU.jpg) center/cover;
+}
+
+.box-content {
+    display: block;
+    height: calc(100% - 50px);
+    width: calc(50% - 50px);
+    padding: 25px;
+}
+
+.category-product,
+.desc-product {
+    text-transform: uppercase;
+    font: 10px 'Montserrat', sans-serif;
+    color: #6c7289;
+}
+
+.category-product {
+    letter-spacing: 7px;
+}
+
+.desc-product {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 92%;
+}
+
+.title-product {
+    font-family: 'Abril Fatface', cursive;
+    width: 92%;
+    font-size: 36px;
+    line-height: 1;
+    padding: 25px 0px;
+}
+
+.price-product {
+    padding: 20px 1px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    color: #3c8067;
+}
+
+.price-product span {
+    color: #6c7289;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.button-product,
+.button-product a {
+    background-color: #3c8067;
+    font: 14px 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.button-product:hover {
+    background-color: #1c232b;
+    transition: 0.5s;
+}
+
+.fa-solid {
+    font-weight: lighter;
+}
+
+@media screen and (max-device-width: 625px) {
+    .box-product {
+        flex-direction: column;
+        margin: 20px 10px;
+        max-height: 780px;
+        height: auto;
+    }
+
+    .img-product {
+        width: 100vw;
+        height: 25vh;
+        background: url(https://i.imgur.com/2VeGGWB.jpg) center/cover;
+    }
+
+    .box-content {
+        width: calc(100% - 50px);
+        height: calc(50% - 50px);
+    }
+
+    .title-product,
+    .desc-product {
+        width: 100%;
+    }
+}
